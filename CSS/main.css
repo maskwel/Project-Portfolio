@@ -1,24 +1,52 @@
+#Home {
+    padding-top: 56px;
+}
+
 .background {
     margin: 0;
+    background-color: #2E4053;  /* Charcoal Gray */
+    color: #F5F5F5;  /* Light Gray Text */
 }
 
 .navbar {
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #1f272e;  /* Dark Slate Gray */
 }
 .navbar li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: #D4AC0D;  /* Soft Golden Yellow */
+    text-decoration: none;
 }
+
+.navbar li a:hover {
+    color: #3498DB;  /* Soft Blue */
+}
+
+h1, h2, h3 {
+    color: #F5F5F5;  /* Off-White for headings */
+}
+
+/* Links */
+a {
+    color: #D4AC0D;  /* Golden Yellow */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3498DB;  /* Soft Blue Hover */
+}
+
 .navbar li {
     float: left;
 }
@@ -39,41 +67,79 @@
     display: flex;
 }
 
+.column-1 {
+    background-color: #3C4B58;  /* Dark Slate Gray */
+    color: #F5F5F5;  /* Light Gray Text */
+}
+
+.column-2 {
+    background-color: #D5DBDB;  /* Soft Light Gray */
+    color: #34495E;  /* Steel Blue Text */
+}
+
+.column-2 h1 {
+    color: #2a4d6f;
+}
+
 .column-1, .column-2 {
     flex: 1;
     width: 50%;
 }
 
 .container {
-    margin: 5% 10%;
+    margin: 10px 30px;
     text-align: center;
 }
 
 .img-container {
-    margin: 10% 15%;
+    margin: 3% 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .img-container img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    border-radius: 10px;
+    
 }
 
 .form-container {
     text-align: left;
 }
 
+/* Container for form input */
 input[type=text] {
     width: 100%;
     display: inline-block;
     text-align: left;
     margin: 7px 0 13px 0;
     padding: 10px 15px;
+    background-color: #f1f4f4;  /* Darker Slate Gray */
+    color: #FFFFFF;  /* White text */
+    border: 1px solid #D4AC0D;  /* Orange border for input fields */
     border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
 }
 
+/* Submit button */
 input[type=submit] {
-    margin: 0 50%;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #D4AC0D;  /* Golden Orange */
+    color: #FFFFFF;  /* White text */
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3498DB;  /* Deep Blue on hover */
+}
+
+input[type=text], input[type=submit] {
+    box-sizing: border-box;
+}
+
+.submit-container {
+    text-align: center;
 }
