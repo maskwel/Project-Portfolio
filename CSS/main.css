@@ -1,5 +1,15 @@
+h1, h2, h3 {
+    color: #F5F5F5;  /* Off-White for headings */
+    font-family: DM Serif Text, Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Newsreader, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
 #Home {
-    padding-top: 56px;
+    padding-top: 65px;
 }
 
 .background {
@@ -27,14 +37,13 @@
     text-decoration: none;
     color: #D4AC0D;  /* Soft Golden Yellow */
     text-decoration: none;
+    font-family: DM Serif Text, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
 }
 
 .navbar li a:hover {
     color: #3498DB;  /* Soft Blue */
-}
-
-h1, h2, h3 {
-    color: #F5F5F5;  /* Off-White for headings */
 }
 
 /* Links */
@@ -52,10 +61,11 @@ a:hover {
 }
 
 .video-text-container {
-
+    padding-bottom: 80px;
 }
 .video-text-container h1 {
     font-family:"Kanit", Arial, Helvetica, sans-serif;
+    font-size: 45px;
     text-align: center;
 }
 .video-text-container p {
@@ -91,6 +101,10 @@ a:hover {
     text-align: center;
 }
 
+.img-border {
+    
+}
+
 .img-container {
     margin: 3% 5%;
     display: flex;
@@ -101,11 +115,17 @@ a:hover {
     object-fit: cover;
     width: 70%;
     border-radius: 10px;
-    
+    transition: transform 1s ease-in-out;   
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
 }
 
 .form-container {
     text-align: left;
+    font-family: Newsreader, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 /* Container for form input */
@@ -121,6 +141,10 @@ input[type=text] {
     border-radius: 5px;
 }
 
+input[type=text]:hover {
+    box-shadow: 0 0 5px #D4AC0D inset;
+}
+
 /* Submit button */
 input[type=submit] {
     padding: 5px 15px;
@@ -130,10 +154,14 @@ input[type=submit] {
     background-color: #D4AC0D;  /* Golden Orange */
     color: #FFFFFF;  /* White text */
     cursor: pointer;
+    font-family: DM Serif Text, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: transform 1s ease-in-out; 
 }
 
 input[type=submit]:hover {
     background-color: #3498DB;  /* Deep Blue on hover */
+    transform: scale(1.2);
 }
 
 input[type=text], input[type=submit] {
