@@ -9,7 +9,7 @@ p {
 }
 
 #Home {
-    padding-top: 65px;
+    padding-top: 53px;
 }
 
 .background {
@@ -22,6 +22,7 @@ p {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 .navbar ul {
     list-style-type: none;
@@ -58,6 +59,16 @@ a:hover {
 
 .navbar li {
     float: left;
+}
+
+.video-container {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+}
+
+.video-container video{
+    width: 100%;
 }
 
 .video-text-container {
@@ -101,10 +112,6 @@ a:hover {
     text-align: center;
 }
 
-.img-border {
-    
-}
-
 .img-container {
     margin: 3% 5%;
     display: flex;
@@ -129,19 +136,19 @@ a:hover {
 }
 
 /* Container for form input */
-input[type=text] {
+input[type=text], input[type=email] {
     width: 100%;
     display: inline-block;
     text-align: left;
     margin: 7px 0 13px 0;
     padding: 10px 15px;
     background-color: #f1f4f4;  /* Darker Slate Gray */
-    color: #FFFFFF;  /* White text */
+    color: #111111;  /* White text */
     border: 1px solid #D4AC0D;  /* Orange border for input fields */
     border-radius: 5px;
 }
 
-input[type=text]:hover {
+input[type=text]:hover, input[type=email]:hover {
     box-shadow: 0 0 5px #D4AC0D inset;
 }
 

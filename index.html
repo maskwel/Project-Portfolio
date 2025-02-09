@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
 
+    <script src="JS/main.js"></script>
+
     <title>Portfolio</title>
 </head>
 <body class="background">
@@ -28,13 +30,15 @@
     <!--home video-->
     <div id="Home">
         <div class="video-container">
-
+            <video autoplay="autoplay" loop muted>
+                <source src="video/background_video.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
 
     <div class="video-text-container">
         <h1>TECH ACADEMY'S PORTFOLIO</h1>
-        <p>My name is David. Welcome to my portfolio website. On it, I will tell tou about my
+        <p>My name is David. Welcome to my portfolio website. On it, I will tell you about my
             background and experience.
         </p>
         <p>Thank you for stopping by and enjoy!</p>
@@ -53,7 +57,7 @@
             <div class="container">
                 <h1>ABOUT</h1>
                 <p>I am a software developer who loves to code!</p>
-                <p>I am graduate of <a href="">The Tech Academy</a>'s Software Developer Boot Camp, 
+                <p>I am graduate of <a href="https://www.learncodinganywhere.com" target="_blank" rel="noopener noreferrer">The Tech Academy</a>'s Software Developer Boot Camp, 
                 and trained and experienced in the following web and programming languages: HTML, 
                 CSS, JavaScript, SQL, C# and more.</p>
                 <p>I am a full-stack developer and would lowe to work with you on your project. 
@@ -68,7 +72,7 @@
         <div class="column-2">
             <div class="container">
                 <h1>GITHUB</h1>
-                <p>You can view my coding projects on my GitHub profile here: <a href="">The Tech Academy Github</a></p>
+                <p>You can view my coding projects on my GitHub profile here: <a href="https://github.com/maskwel" target="_blank" rel="noopener noreferrer">Github</a></p>
             </div>
         </div>
 
@@ -92,13 +96,13 @@
             <div class="container">
                 <h1>CONTACT</h1>
                 <div class="form-container">
-                    <form action="">
+                    <form action="https://formcarry.com/s/hdBev3DQeiy" method="post" enctype="multipart/form-data">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Please enter your name here">
+                        <input type="text" id="name" name="name" placeholder="Please enter your name" maxlength="20" required>
                         <label for="email">Email:</label>
-                        <input type="text" id="email" placeholder="Please enter your email here">
+                        <input type="email" id="email" name="email" placeholder="Please enter your email" maxlength="30" required>
                         <label for="message">Message:</label>
-                        <input type="text" id="message" placeholder="Please write your message here">
+                        <input type="text" id="message" name="message" placeholder="Please write your message" maxlength="100" required>
 
                         <!--submit button-->
                         <div class="submit-container">
@@ -110,6 +114,5 @@
         </div>
     </div>
     <!--contact end-->
-
 </body>
 </html>
