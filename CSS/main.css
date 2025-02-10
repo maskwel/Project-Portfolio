@@ -136,7 +136,7 @@ a:hover {
 }
 
 /* Container for form input */
-input[type=text], input[type=email] {
+.input-style {
     width: 100%;
     display: inline-block;
     text-align: left;
@@ -148,12 +148,12 @@ input[type=text], input[type=email] {
     border-radius: 5px;
 }
 
-input[type=text]:hover, input[type=email]:hover {
+.input-style:hover {
     box-shadow: 0 0 5px #D4AC0D inset;
 }
 
 /* Submit button */
-input[type=submit] {
+.submit-style {
     padding: 5px 15px;
     border-radius: 3px;
     border-style: solid;
@@ -167,12 +167,12 @@ input[type=submit] {
     will-change: transform;
 }
 
-input[type=submit]:hover {
+.submit-style:hover {
     background-color: #3498DB;  /* Deep Blue on hover */
     transform: scale(1.1);
 }
 
-input[type=text], input[type=submit] {
+.input-style, .submit-style {
     box-sizing: border-box;
 }
 
