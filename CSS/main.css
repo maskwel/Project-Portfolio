@@ -30,6 +30,8 @@ p {
     padding: 0;
     overflow: hidden;
     background-color: #1f272e;  /* Dark Slate Gray */
+    display: flex;
+
 }
 .navbar li a {
     display: block;
@@ -41,6 +43,15 @@ p {
     font-family: DM Serif Text, Arial, Helvetica, sans-serif;
     font-size: 18px;
 
+}
+
+#linkedin{
+    margin-left: auto;
+}
+
+#linkedin a {
+    padding-bottom: 0;
+    padding-top: 5px;
 }
 
 .navbar li a:hover {
